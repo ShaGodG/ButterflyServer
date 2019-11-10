@@ -51,10 +51,12 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'butterflyServer.urls'
 
+TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [TEMPLATES],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
